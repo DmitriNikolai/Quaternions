@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProjectsUnity\\Quaternions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|c:\\projectsunity\\quaternions\\assets\\cuberenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\cuberenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|c:\\projectsunity\\quaternions\\assets\\rotateobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\rotateobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|C:\\ProjectsUnity\\Quaternions\\assets\\matrixcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\matrixcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|C:\\ProjectsUnity\\Quaternions\\assets\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|C:\\ProjectsUnity\\Quaternions\\assets\\complexcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\complexcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|C:\\ProjectsUnity\\Quaternions\\assets\\imaginary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:assets\\imaginary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|C:\\ProjectsUnity\\Quaternions\\Assets\\RotateObjectEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56147ECA-AC1D-75A0-04AD-87D62051C412}|Assembly-CSharp.csproj|solutionrelative:Assets\\RotateObjectEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProjectsUnity\\Quaternions\\Assets\\MatrixCalculatorEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\MatrixCalculatorEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5EF57E-19F3-5B6D-E10F-839D5611407B}|Assembly-CSharp-Editor.csproj|C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\RotateObjectEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5EF57E-19F3-5B6D-E10F-839D5611407B}|Assembly-CSharp-Editor.csproj|solutionrelative:Assets\\Editor\\RotateObjectEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5EF57E-19F3-5B6D-E10F-839D5611407B}|Assembly-CSharp-Editor.csproj|C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\ComplexCalculatorEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5EF57E-19F3-5B6D-E10F-839D5611407B}|Assembly-CSharp-Editor.csproj|solutionrelative:Assets\\Editor\\ComplexCalculatorEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CubeRenderer.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\CubeRenderer.cs",
+              "RelativeDocumentMoniker": "Assets\\CubeRenderer.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\CubeRenderer.cs",
+              "RelativeToolTip": "Assets\\CubeRenderer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T21:15:32.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RotateObjectEditor.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\RotateObjectEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\RotateObjectEditor.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\RotateObjectEditor.cs",
+              "RelativeToolTip": "Assets\\Editor\\RotateObjectEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T21:12:07.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ComplexCalculatorEditor.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\ComplexCalculatorEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\ComplexCalculatorEditor.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\Editor\\ComplexCalculatorEditor.cs",
+              "RelativeToolTip": "Assets\\Editor\\ComplexCalculatorEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:51:00.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RotateObject.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\RotateObject.cs",
+              "RelativeDocumentMoniker": "Assets\\RotateObject.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\RotateObject.cs",
+              "RelativeToolTip": "Assets\\RotateObject.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:44:38.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RotateObjectEditor.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\RotateObjectEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\RotateObjectEditor.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\RotateObjectEditor.cs",
+              "RelativeToolTip": "Assets\\RotateObjectEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T20:43:07.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatrixCalculator.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\MatrixCalculator.cs",
+              "RelativeDocumentMoniker": "Assets\\MatrixCalculator.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\MatrixCalculator.cs",
+              "RelativeToolTip": "Assets\\MatrixCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T20:14:33.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MatrixCalculatorEditor.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\MatrixCalculatorEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\MatrixCalculatorEditor.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\MatrixCalculatorEditor.cs",
+              "RelativeToolTip": "Assets\\MatrixCalculatorEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T20:34:02.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Matrix.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\Matrix.cs",
+              "RelativeDocumentMoniker": "Assets\\Matrix.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\Matrix.cs",
+              "RelativeToolTip": "Assets\\Matrix.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T19:13:45.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComplexCalculator.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\ComplexCalculator.cs",
+              "RelativeDocumentMoniker": "Assets\\ComplexCalculator.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\ComplexCalculator.cs",
+              "RelativeToolTip": "Assets\\ComplexCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:32:00.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Imaginary.cs",
+              "DocumentMoniker": "C:\\ProjectsUnity\\Quaternions\\Assets\\Imaginary.cs",
+              "RelativeDocumentMoniker": "Assets\\Imaginary.cs",
+              "ToolTip": "C:\\ProjectsUnity\\Quaternions\\Assets\\Imaginary.cs",
+              "RelativeToolTip": "Assets\\Imaginary.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:02:07.82Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
