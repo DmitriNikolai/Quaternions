@@ -11,7 +11,7 @@ public class RotateObjectEditor : Editor {
 
         if (GUILayout.Button("Rotate"))
         {
-            rotateObject.RotateCube();
+            rotateObject.RotateWithQuaternions();
         }
     }
 }
