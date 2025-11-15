@@ -6,9 +6,11 @@ using UnityEngine.Analytics;
 
 public class RotateObject : MonoBehaviour {
 
-    public float ztheta = 0f;
-    public float ytheta = 0f;
-    public float xtheta = 0f;
+    public float theta = 0f;
+    public Vector3 dir = new Vector3();
+    public float zTheta = 0f;
+    public float yTheta = 0f;
+    public float xTheta = 0f;
     public bool radianMode;
     // Use this for initialization
     void Awake()
@@ -21,15 +23,20 @@ public class RotateObject : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         //RotateCube();
+        dir.Normalize();
+        if (dir.magnitude != 1)
+        {
+            dir.x = 1f - dir.magnitude;
+        }
         RotateWithQuaternions();
     }
     public void RotateCube()
     {
-        Vector2 zRotation = Rotate(ztheta, gameObject.transform.position.x, gameObject.transform.position.y, radianMode);
+        Vector2 zRotation = EulerRotate(zTheta, gameObject.transform.position.x, gameObject.transform.position.y, radianMode);
         gameObject.transform.position = new Vector3(zRotation.x, zRotation.y, gameObject.transform.position.z);
-        Vector2 yRotation = Rotate(ytheta, gameObject.transform.position.x, gameObject.transform.position.z, radianMode);
+        Vector2 yRotation = EulerRotate(yTheta, gameObject.transform.position.x, gameObject.transform.position.z, radianMode);
         gameObject.transform.position = new Vector3(yRotation.x, gameObject.transform.position.y, yRotation.y);
-        Vector2 xRotation = Rotate(xtheta, gameObject.transform.position.y, gameObject.transform.position.z, radianMode);
+        Vector2 xRotation = EulerRotate(xTheta, gameObject.transform.position.y, gameObject.transform.position.z, radianMode);
         gameObject.transform.position = new Vector3(gameObject.transform.position.x, xRotation.x, xRotation.y);
     }
 
@@ -38,13 +45,12 @@ public class RotateObject : MonoBehaviour {
         //gameObject.transform.position = qRotate2(Vector3.right, xtheta, radianMode);
         //gameObject.transform.position = qRotate2(Vector3.up, ytheta, radianMode);
         //gameObject.transform.position = qRotate2(Vector3.forward, ztheta, radianMode);
-
-        gameObject.transform.position = qRotate(gameObject.transform, xtheta, ytheta, ztheta, radianMode);
+        gameObject.transform.position = qRotate(gameObject.transform.position, theta, dir, radianMode);
         //gameObject.transform.position = qRotate(gameObject.transform, 0, ytheta, 0, radianMode);
         //gameObject.transform.position = qRotate(gameObject.transform, 0, 0, ztheta, radianMode);
     }
 
-	public static Vector2 Rotate(float theta, float dir1, float dir2, [DefaultValue("false")] bool radianMode)
+    public static Vector2 EulerRotate(float theta, float dir1, float dir2, [DefaultValue("false")] bool radianMode)
 	{
         float[,] rotation;
 
@@ -80,27 +86,26 @@ public class RotateObject : MonoBehaviour {
         //gameObject.transform.position = new Vector3(newPositionMatrix.matrix[0, 0], newPositionMatrix.matrix[1, 0], 0f);
     }
 
-    public static Vector3 qRotate(Transform self, float xTheta, float yTheta, float zTheta, [DefaultValue("false")] bool radianMode)
+    public static Vector3 qRotate(Vector3 objectPosition, float theta, Vector3 dir, [DefaultValue("false")] bool radianMode)
     {
         if (!radianMode)
         {
-            xTheta = xTheta * Mathf.Deg2Rad;
-            yTheta = yTheta * Mathf.Deg2Rad;
-            zTheta = zTheta * Mathf.Deg2Rad;
+            theta = theta * Mathf.Deg2Rad;
         }
-        MyQuaternion p = new MyQuaternion(0, self.position.x, self.position.y, self.position.z);
-        MyQuaternion q = new MyQuaternion(Mathf.Cos(xTheta), Mathf.Sin(xTheta), Mathf.Sin(yTheta), Mathf.Sin(zTheta));
-        MyQuaternion qInverse = new MyQuaternion(Mathf.Cos(-xTheta), Mathf.Sin(-xTheta), Mathf.Sin(-yTheta), Mathf.Sin(-zTheta));
+        dir.Normalize();
+        MyQuaternion p = new MyQuaternion(0, objectPosition.x, objectPosition.y, objectPosition.z);
+        MyQuaternion q = new MyQuaternion(Mathf.Cos(theta), Mathf.Sin(theta) * dir.x, Mathf.Sin(theta) * dir.y, Mathf.Sin(theta) * dir.z);
+        MyQuaternion qInverse = MyQuaternion.QuaternionConjugate(q);
         //MyQuaternion q = new MyQuaternion(Mathf.Cos(theta), 0,0,0); //Mathf.Cos(the rest of the quaternion )
 
-        MyQuaternion result = MyQuaternion.QuaternionMultiplication(p, qInverse);
-        MyQuaternion result2 = MyQuaternion.QuaternionMultiplication(q, result);
-        if(result.S == Mathf.Infinity)
+        MyQuaternion rotation = MyQuaternion.QuaternionMultiplication(p, qInverse);
+        MyQuaternion antiRotation = MyQuaternion.QuaternionMultiplication(q, rotation);
+        if(antiRotation.S == Mathf.Infinity)
         {
-            result.S = -1f * Mathf.Infinity;
+            antiRotation.S = -1f * Mathf.Infinity;
         }
-        Vector3 dir = new Vector3(result2.X, result2.Y, result2.Z);
-        return dir;
+        Vector3 result = new Vector3(antiRotation.X, antiRotation.Y, antiRotation.Z);
+        return result;
     }
 
     public static Vector3 qRotate2(Vector3 dir, float theta, [DefaultValue("false")] bool radianMode)
@@ -111,6 +116,7 @@ public class RotateObject : MonoBehaviour {
             //yTheta = yTheta * Mathf.Deg2Rad;
             //zTheta = zTheta * Mathf.Deg2Rad;
         }
+
         MyQuaternion q = new MyQuaternion(Mathf.Cos(theta), Mathf.Sin(theta), Mathf.Sin(theta), Mathf.Sin(theta));
         MyQuaternion p = new MyQuaternion(5,dir.x,dir.y,dir.z);
         //MyQuaternion qInverse = new MyQuaternion(Mathf.Cos(-theta), Mathf.Sin(-theta), Mathf.Sin(-theta), Mathf.Sin(-theta));

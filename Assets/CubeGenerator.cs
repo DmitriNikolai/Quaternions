@@ -15,6 +15,9 @@ public class CubeGenerator : MonoBehaviour
     public float zTheta;
     public float yTheta;
     public float xTheta;
+
+	public float theta;
+	public Vector3 dir = new Vector3();
     // Use this for initialization
     void Start()
 	{
@@ -28,7 +31,7 @@ public class CubeGenerator : MonoBehaviour
 	void Update()
 	{
 		CreateShape();
-		RotateMesh();
+		RotateMeshWithQ();
 		UpdateMesh();
 	}
 
@@ -82,18 +85,27 @@ public class CubeGenerator : MonoBehaviour
 		for (int i = 0; i < mesh.vertices.Length; i++)
         {
 			vertices[i].Normalize();
-            Vector2 zRotation = RotateObject.Rotate(zTheta, vertices[i].x, vertices[i].y,false);
+            Vector2 zRotation = RotateObject.EulerRotate(zTheta, vertices[i].x, vertices[i].y,false);
 			vertices[i] = new Vector3(zRotation.x, zRotation.y, vertices[i].z);
 		}
         for (int i = 0; i < mesh.vertices.Length; i++)
         {
-            Vector2 yRotation = RotateObject.Rotate(yTheta, vertices[i].x, vertices[i].z, false);
+            Vector2 yRotation = RotateObject.EulerRotate(yTheta, vertices[i].x, vertices[i].z, false);
             vertices[i] = new Vector3(yRotation.x, vertices[i].y, yRotation.y);
         }
         for (int i = 0; i < mesh.vertices.Length; i++)
         {
-            Vector2 xRotation = RotateObject.Rotate(xTheta, vertices[i].y, vertices[i].z, false);
+            Vector2 xRotation = RotateObject.EulerRotate(xTheta, vertices[i].y, vertices[i].z, false);
             vertices[i] = new Vector3(vertices[i].x, xRotation.x, xRotation.y);
+        }
+    }
+
+	void RotateMeshWithQ()
+	{
+        for (int i = 0; i < mesh.vertices.Length; i++)
+        {
+			Vector3 vertexPosition = new Vector3(vertices[i].x, vertices[i].y, vertices[i].z);
+            vertices[i] = RotateObject.qRotate(vertexPosition, theta, dir, false);
         }
     }
 }
